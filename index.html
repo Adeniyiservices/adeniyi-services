@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Adeniyi Services</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            color: #172033;
+        }
+
+        header {
+            background: #0b1f3a;
+            color: white;
+            padding: 18px 20px;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #f5b942;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0b1f3a, #174d7a);
+            color: white;
+            padding: 55px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 34px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 17px;
+            margin-bottom: 25px;
+            color: #e5edf5;
+        }
+
+        .search-box {
+            max-width: 600px;
+            margin: auto;
+            display: flex;
+            background: white;
+            border-radius: 12px;
+            padding: 6px;
+        }
+
+        .search-box input {
+            flex: 1;
+            border: none;
+            outline: none;
+            padding: 15px;
+            font-size: 15px;
+            border-radius: 10px;
+        }
+
+        .search-box button {
+            border: none;
+            background: #f5b942;
+            color: #172033;
+            font-weight: bold;
+            padding: 0 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .section {
+            padding: 35px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 26px;
+        }
+
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .category {
+            background: white;
+            padding: 22px 10px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .category:hover {
+            transform: translateY(-3px);
+        }
+
+        .category .icon {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .category h3 {
+            font-size: 16px;
+        }
+
+        .annonce {
+            background: white;
+            border-radius: 18px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+        }
+
+        .annonce h2 {
+            margin-bottom: 10px;
+        }
+
+        .annonce p {
+            color: #667085;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #0b1f3a;
+            color: white;
+            padding: 13px 22px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 30px;
+            background: #0b1f3a;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        footer p {
+            margin: 8px;
+            color: #cbd5e1;
+        }
+
+        @media (min-width: 700px) {
+            .categories {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .hero h1 {
+                font-size: 45px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            Adeniyi <span>Services</span>
+        </div>
+    </header>
+
+    <section class="hero">
+
+        <h1>Trouvez ce dont vous avez besoin</h1>
+
+        <p>
+            Trouvez. Comparez. Contactez.
+        </p>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="search"
+               
