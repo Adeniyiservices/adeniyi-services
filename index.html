@@ -185,6 +185,14 @@ header{
     text-decoration:none;
 }
 
+.whatsapp{
+    background:#25D366;
+}
+
+.call{
+    background:#0b1f3a;
+}
+
 .annonce{
     margin-top:40px;
     background:linear-gradient(135deg,#f5b942,#ffd978);
@@ -210,17 +218,53 @@ header{
     font-weight:bold;
 }
 
+.contact-section{
+    text-align:center;
+    padding:10px 20px 40px;
+}
+
+.contact-buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
 footer{
     background:#0b1f3a;
     color:white;
     text-align:center;
     padding:35px 20px;
-    margin-top:40px;
+    margin-top:20px;
 }
 
 footer p{
     color:#cbd5e1;
     margin-top:10px;
+}
+
+/* BOUTON WHATSAPP FLOTTANT */
+
+.whatsapp-float{
+    position:fixed;
+    right:18px;
+    bottom:18px;
+    width:58px;
+    height:58px;
+    background:#25D366;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:30px;
+    box-shadow:0 5px 18px rgba(0,0,0,.25);
+    z-index:999;
+}
+
+.whatsapp-float:hover{
+    transform:scale(1.08);
 }
 
 @media(min-width:700px){
@@ -437,6 +481,40 @@ footer p{
 </section>
 
 
+<!-- CONTACT -->
+
+<section class="contact-section">
+
+    <div class="title">
+
+        <h2>📞 Contactez-nous</h2>
+
+        <p>
+            Une question ? Contactez Adeniyi Services.
+        </p>
+
+    </div>
+
+    <div class="contact-buttons">
+
+        <a
+        href="https://wa.me/22991476323"
+        target="_blank"
+        class="contact whatsapp">
+            💬 WhatsApp
+        </a>
+
+        <a
+        href="tel:+22991476323"
+        class="contact call">
+            📞 Appeler
+        </a>
+
+    </div>
+
+</section>
+
+
 <footer>
 
     <div class="logo">
@@ -448,10 +526,25 @@ footer p{
     </p>
 
     <p>
+        📞 +229 91 47 63 23
+    </p>
+
+    <p>
         © 2026 Adeniyi Services
     </p>
 
 </footer>
+
+
+<!-- WHATSAPP FLOTTANT -->
+
+<a
+href="https://wa.me/22991476323"
+target="_blank"
+class="whatsapp-float"
+aria-label="Contacter Adeniyi Services sur WhatsApp">
+    💬
+</a>
 
 
 <script>
@@ -501,4 +594,4 @@ function publier(){
 </script>
 
 </body>
-    </html>
+</html>
